@@ -1,0 +1,122 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* 横幅90% */
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* headerタグ内のheadingクラスにのみ反映させる */
+header .heading {
+  font-size: 32px;
+}
+
+.nav-list {
+  /* 文字を中央寄せ */
+  text-align: center;
+  /* 内側余白（パディング）の上下を10px,左右を0にする */
+  padding: 10px 0;
+  /* 外側余白（マージン）の上下を0,左右を自動にする */
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  /* 外側余白（マージン）の上下を0,左右を20pxにする */
+  margin: 0 20px;
+}
+
+.main-visual {
+  /* 横幅いっぱい */
+  width: 100%;
+  /* 高さ300px */
+  height: 300px;
+  /* 背景をimgフォルダのmv.jpgにする */
+  background-image: url(img/mv.jpg);
+  /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-size: cover;
+  /* 背景画像を中央に配置 */
+  background-position: center;
+}
+
+.main-visual-text {
+  color: #fff;
+}
+
+.main-visual-name {
+  /* 上側の外側の余白 */
+  margin-top: 30px;
+  color: #fff;
+}
+
+.main-visual-content {
+  /* 横幅40% */
+  width: 40%;
+  /* 親の高さに変える */
+  height: 300px;
+  /* 背景色を半透明の黒にする */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 文字を中央揃えにする */
+  text-align: center;
+  /* 上側の内側余白で垂直方向の位置を調整 */
+  padding-top: 105px;
+}
+
+.main {
+  /* 横幅840px */
+  width: 840px;
+  /* background-color, heightの指定を解除 */
+
+  /* 横幅いっぱい */
+  width: 100%;
+
+  /* Flexboxの利用 */
+  display: flex;
+  /* 子要素の横並び・中央寄せ */
+  justify-content: center;
+  /* 中央寄せ（左右に余白がないとできない） */
+  margin: 0 auto;
+}
+
+.blog {
+  /* 横幅600px */
+  width: 600px;
+  /* 高さ1400px */
+  height: 1400px;
+  /* 背景色limegreen */
+  background-color: limegreen;
+}
+
+.sidebar {
+  /* 横幅240px */
+  width: 240px;
+  /* 高さ1400px */
+  height: 1400px;
+  /* 背景色palegreen */
+  background-color: palegreen;
+}
+
+footer {
+  /* 横幅いっぱい */
+  width: 100%;
+  /* 高さ120px */
+  height: 120px;
+  /* テキストアライン（中央揃え） */
+  text-align: center;
+  /* 行の高さ（ラインハイト）、つまり行と行の間隔を120pxに設定 */
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text {
+  /* footer-textを白にする */
+  color: #fff;
+}
